@@ -7,23 +7,31 @@
               color:blue;
               font-size:50pt;
               position: absolute;
-              left: 45%;
+              left: 43%;
               top: 20%;
+            }
+
+            h1::second-letter{
+                color:brown;
             }
             form {
                 position: absolute;
-                left: 45%;
+                left: 40%;
                 top: 40%;
             } 
-            ul.a{
+            
+            #one{
                 position: absolute;
-                left: 45%;
-                top: 0%;
+                top: 10px;
+                left: 850px;
+                }
+            #two{
+                position: absolute;
+                top: 10px;
+                left:1000px
+            }
+            a {color:black}
 
-            }
-            li{
-                text-align: center;
-            }
 
         </style>
     </head>
@@ -33,9 +41,11 @@
             <input type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
-        <ul>
-            <li><a href="path/to/GoogleImage.html">Google Image Search</a></li>
-            <li><a href="path/to/GoogleAdvanced.html">Google Advanced Search</a></li>
-        </ul>
+        <div class="links" id = "one">
+            <a href="file:///Users/arianfaridi/project0/GoogleImage.html">Google Image Search</a>
+        </div>
+        <div class="links" id = "two">
+            <a href="file:///Users/arianfaridi/project0/GoogleAdvanced.html">Google Advanced Search</a>
+        </div>
     </body>
 </html>
