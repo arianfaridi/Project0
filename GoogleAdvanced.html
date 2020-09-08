@@ -4,43 +4,156 @@
         <title>AdvancedSearch</title>
         <style>
             h1 {
-              font-size:35pt;
-              font-family:'Courier New', Courier, monospace;
+              font-size:25pt;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              white-space: nowrap;
+              background-color: #F5F5F5;
               position: absolute;
-              left: 5px;
-              top: -30px;
+              left: 0px;
+              top: -20px;
             }
             h2{
-                font-size:20pt;
+                font-size:15pt;
+                font-family: Arial;
+                color: #ea4335;
+                font-weight: 500;
                 position:absolute;
-                left: 30px;
-                top: 50px;
+                left: 40px;
+                top: 70px;
+            }
+            hr {
+                display: block;
+                height: 1px;
+                border: 0;
+                border-top: 1px solid #F5F5F5;
+                margin: 2em 0;
+                padding: 0;
+                margin-top: 100pt;
+                margin-left: -10pt;
             }
 
-    
-            form {
-                position: absolute;
-                left: 40%;
-                top: 40%;
-            } 
             
             #one{
                 position: absolute;
                 top: 10px;
-                left:1050px
+                left:1100px;
             }
             a {color:black}
+
+            .Find{
+                font-family: Arial;
+                position:absolute;
+                left: 40px;
+                font-size: 12pt;
+            }
+            #allthesewords{
+                position:absolute;
+                left:40px;
+                top:250px;
+                font-family: Arial;
+                font-size:10pt;
+            }
+            #thisexactword{
+                position:absolute;
+                left:40px;
+                top:300px;
+                font-family: Arial;
+                font-size:10pt;
+            }
+            #anyofthesewords{
+                position:absolute;
+                left:40px;
+                top:350px;
+                font-family: Arial;
+                font-size:10pt;
+
+            }
+            #noneofthesewords{
+                position:absolute;
+                left:40px;
+                top:400px;
+                font-family: Arial;
+                font-size:10pt;    
+            }
+            #input1{
+                width:1001%;
+                position: absolute;
+                left: 170px;
+                top:-5px;
+                border: 1px solid#DCDCDC;
+            }
+            #input2{
+                width:608%;
+                position: absolute;
+                left: 170px;
+                top: -5px;
+                border: 1px solid#DCDCDC;
+            }
+            #input3{
+                width:803%;
+                position: absolute;
+                left: 170px;
+                top:-5px;
+                border: 1px solid#DCDCDC;
+            }
+            #input4{
+                width:750%;
+                position: absolute;
+                left: 170px;
+                top:-5px;
+                border: 1px solid#DCDCDC;
+            }
+            #button{
+              color:white;
+              font-weight: bolder;
+              background-color:#6495ED;
+              position: relative;
+              left: 1015px;
+              top:300px;
+              border: 1px solid #6495ED;
+              block-size: 35px;
+            }
+            
 
 
         </style>
     </head>
     <body>
-        <h1>Google</h1>
+        <h1>
+            <span style='color: #4285f4'>G</span>
+            <span style='color: #ea4335'>o</span>
+            <span style='color: #fbbc05'>o</span>
+            <span style='color: #4285f4'>g</span> 
+            <span style='color: #34a853'>l</span> 
+            <span style='color: #ea4335'>e</span>
+        </h1>
         <h2>Advanced Search</h2>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="GoogleAdvanced">
+    <hr>
+        <p class="Find">
+        Find pages with...
+        </p>
+        <form action="https://google.com/search" id="allthesewords">
+            <label> all these words:</label>
+            <input type="text" name="as_q" id="input1">
         </form>
+        <form action="https://google.com/search" id="thisexactword">
+            <label> this exact word or phrase:</label>
+            <input type="text" name="as_epq" id="input2" >
+        </form>
+        <form action="https://google.com/search" id="anyofthesewords">
+            <label> any of these words:</label>
+            <input type="text" name="as_oq" id="input3" >
+        </form>
+        <form action="https://google.com/search" id="noneofthesewords">
+            <label> none of these words:</label>
+            <input type="text" name="as_oq" id="input4" >
+        </form>
+        <input type="submit" value="Advanced Search" id="button">
+    </body>
+        
+
+
+        
 
         <div class="links" id = "one">
             <a href="file:///Users/arianfaridi/project0/index.html">Google Search</a>
