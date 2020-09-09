@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images</title>
+        <style>
+            h1 {
+              color:blue;
+              font-size:60pt;
+              position: absolute;
+              left: 450px;
+              top: 100px;
+            }
+
+            h1::second-letter{
+                color:brown;
+            }
+            #search{
+                position: absolute;
+                left: 290px;
+                top: 270px;
+                width: 650px;
+                height:30px;
+            }
+            
+            #one{
+                position: absolute;
+                top: 10px;
+                left: 1030px;
+                }
+            #two{
+                position: absolute;
+                top: 10px;
+                left:1110px
+            }
+            #button{
+                color:rgb(105, 104, 104);
+                position: absolute;
+                top: 330px;
+                left: 550px;
+                background-color: #f5eded;
+                border: 1px solid white;
+                width: 150px;
+                height:40px;
+            }
+        
+            
+            a {color:black}
+
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            <span style='color: #4285f4'>G</span>
+            <span style='color: #ea4335'>o</span>
+            <span style='color: #fbbc05'>o</span>
+            <span style='color: #4285f4'>g</span> 
+            <span style='color: #34a853'>l</span> 
+            <span style='color: #ea4335'>e</span>
+        </h1>
+        <form action="https://google.com/search">
+            <input type="text" name="q" id="search">
+            <input type="submit" value="Search" id="button">
+        </form>
+        <div class="links" id = "one">
+            <a href="file:///Users/arianfaridi/project0/GoogleAdvanced.html">Advanced</a>
+        </div>
+        <div class="links" id = "two">
+            <a href="file:///Users/arianfaridi/project0/index.html"> Google </a>
+        </div>
+    </body>
+</html>

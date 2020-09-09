@@ -76,31 +76,31 @@
                 font-size:10pt;    
             }
             #input1{
-                width:1001%;
+                width:929px;
                 position: absolute;
-                left: 170px;
-                top:-5px;
+                left: 210px;
+                top: 250px;
                 border: 1px solid#DCDCDC;
             }
             #input2{
-                width:608%;
+                width:929px;
                 position: absolute;
-                left: 170px;
-                top: -5px;
+                left: 210px;
+                top: 300px;
                 border: 1px solid#DCDCDC;
             }
             #input3{
-                width:803%;
+                width:929px;
                 position: absolute;
-                left: 170px;
-                top:-5px;
+                left: 210px;
+                top: 350px;
                 border: 1px solid#DCDCDC;
             }
             #input4{
-                width:750%;
+                width:929px;
                 position: absolute;
-                left: 170px;
-                top:-5px;
+                left: 210px;
+                top: 400px;
                 border: 1px solid#DCDCDC;
             }
             #button{
@@ -132,23 +132,21 @@
         <p class="Find">
         Find pages with...
         </p>
-        <form action="https://google.com/search" id="allthesewords">
-            <label> all these words:</label>
+        <form action="https://google.com/search">
+            <label id="allthesewords"> all these words:</label>
             <input type="text" name="as_q" id="input1">
+        
+            <label id="thisexactword"> this exact word or phrase:</label>
+            <input type="text" name="as_epq" id="input2">
+        
+            <label id="anyofthesewords"> any of these words:</label>
+            <input type="text" name="as_oq" id="input3">
+
+            <label id="noneofthesewords"> none of these words:</label>
+            <input type="text" name="as_eq" id="input4">
+
+            <input type="submit" value="Advanced Search" id="button">
         </form>
-        <form action="https://google.com/search" id="thisexactword">
-            <label> this exact word or phrase:</label>
-            <input type="text" name="as_epq" id="input2" >
-        </form>
-        <form action="https://google.com/search" id="anyofthesewords">
-            <label> any of these words:</label>
-            <input type="text" name="as_oq" id="input3" >
-        </form>
-        <form action="https://google.com/search" id="noneofthesewords">
-            <label> none of these words:</label>
-            <input type="text" name="as_oq" id="input4" >
-        </form>
-        <input type="submit" value="Advanced Search" id="button">
     </body>
         
 
