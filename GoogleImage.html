@@ -2,47 +2,57 @@
 <html lang="en">
     <head>
         <title>Google Images</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <style>
-            h1 {
-              color:blue;
-              font-size:60pt;
-              position: absolute;
-              left: 450px;
-              top: 100px;
-            }
+            img{
+               width: 290px;
+               margin-top:145pt;
+               margin-left: 425pt;
+            }         
+        
 
-            h1::second-letter{
-                color:brown;
-            }
             #search{
                 position: absolute;
-                left: 290px;
-                top: 270px;
-                width: 650px;
+                left: 420px;
+                top: 335px;
+                width: 580px;
                 height:30px;
             }
             
             #one{
-                position: absolute;
+                position: fixed;
                 top: 10px;
-                left: 1030px;
+                left: 1290px;
+                font-size: 10pt;
                 }
             #two{
-                position: absolute;
+                position: fixed;
                 top: 10px;
-                left:1110px
+                left:1360px;
+                font-size: 10pt;
             }
             #button{
                 color:rgb(105, 104, 104);
                 position: absolute;
-                top: 330px;
-                left: 550px;
+                top: 390px;
+                left: 640px;
                 background-color: #f5eded;
                 border: 1px solid white;
                 width: 150px;
                 height:40px;
             }
         
+            .btn-primary {
+                color:rgb(97, 94, 94);
+                background-color: #f7f3f3;
+                border: 1px solid white;
+            }
+            .btn-primary:hover {
+                color:rgb(88, 85, 85);
+                background-color: #f7f3f3;
+                border: 1px solid rgb(31, 30, 30);
+
+            }
             
             a {color:black}
 
@@ -50,17 +60,10 @@
         </style>
     </head>
     <body>
-        <h1>
-            <span style='color: #4285f4'>G</span>
-            <span style='color: #ea4335'>o</span>
-            <span style='color: #fbbc05'>o</span>
-            <span style='color: #4285f4'>g</span> 
-            <span style='color: #34a853'>l</span>
-            <span style='color: #ea4335'>e</span>
-        </h1>
+        <img  src=googleimage.jpg>
         <form action="https://google.com/search">
             <input type="text" name="q" id="search">
-            <input type="submit" value="Search" id="button">
+            <button  class="btn btn-primary"  type="submit" id="button">Search</button>
             <input name="tbm" type="hidden" value="isch">
         </form>
         <div class="links" id = "one">

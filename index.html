@@ -1,82 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
     <head>
-        <title>Search</title>
-        <style>
-            h1 {
-              color:blue;
-              font-size:60pt;
-              position: absolute;
-              left: 450px;
-              top: 100px;
+        <title>Google</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <style>
+            img{
+               width: 460px;
+               margin-top:95pt;
+               margin-left: 365pt;
             }
-
-            h1::second-letter{
-                color:brown;
-            }
+            
             #search{
-                position: absolute;
-                left: 290px;
-                top: 270px;
-                width: 650px;
+                position: fixed;
+                left: 420px;
+                top: 335px;
+                width: 580px;
                 height:30px;
             }
             
             #one{
-                position: absolute;
+                position: fixed;
                 top: 10px;
-                left: 1045px;
+                left: 1290px;
+                font-size: 10pt;
                 }
             #two{
-                position: absolute;
+                position: fixed;
                 top: 10px;
-                left:1100px
+                left:1360px;
+                font-size: 10pt;
             }
             #button{
-                color:rgb(105, 104, 104);
-                position: absolute;
-                top: 330px;
-                left: 450px;
-                background-color: #f5eded;
-                border: 1px solid white;
-                width: 150px;
+                position: fixed;
+                font-size: 10pt;
+                top: 390px;
+                left: 570px;
+                width: 130px;
                 height:40px;
             }
-            #button1{
-                color:rgb(105, 104, 104);
-                position: absolute;
-                top: 330px;
-                left: 620px;
-                background-color: #f5eded;
-                border: 1px solid white;
-                width: 150px;
+            #button1{            
+                position: fixed;
+                font-size: 10pt;
+                top: 390px;
+                left: 710px;
+                width: 140px;
                 height:40px;
             }
             
             a {color:black}
 
+            .btn-primary {
+                color:rgb(97, 94, 94);
+                background-color: #f7f3f3;
+                border: 1px solid white;
+            }
+            .btn-primary:hover {
+                color:rgb(88, 85, 85);
+                background-color: #f7f3f3;
+                border: 1px solid rgb(31, 30, 30);
+
+            }
+
 
         </style>
     </head>
     <body>
-        <h1>
-            <span style='color: #4285f4'>G</span>
-            <span style='color: #ea4335'>o</span>
-            <span style='color: #fbbc05'>o</span>
-            <span style='color: #4285f4'>g</span> 
-            <span style='color: #34a853'>l</span> 
-            <span style='color: #ea4335'>e</span>
-        </h1>
+        <img  src=google.jpg>
         <form action="https://google.com/search">
             <input type="text" name="q" id="search">
-            <input type="submit" value="Google Search" id="button">
-            <input type="submit" name="btnI" value="I'm Feeling Lucky" id="button1" formaction="https://google.com/search?q=%s&btnI=I%27m+Feeling+Lucky">
+            <button  class="btn btn-primary"  type="submit" id="button">Google Search</button>
+            <button  class="btn btn-primary" type="submit" name="btnI" id="button1" formaction="https://google.com/search?q=%s&btnI=I%27m+Feeling+Lucky">
+                I'm Feeling Lucky </button>
         </form>
         <div class="links" id = "one">
-            <a href="file:///Users/arianfaridi/project0/GoogleImage.html">Images</a>
+            <a href="file:///Users/arianfaridi/project0/GoogleAdvanced.html">Advanced</a>
         </div>
         <div class="links" id = "two">
-            <a href="file:///Users/arianfaridi/project0/GoogleAdvanced.html"> Advanced </a>
+            <a href="file:///Users/arianfaridi/project0/GoogleImage.html"> Images </a>
         </div>
     </body>
 </html>
